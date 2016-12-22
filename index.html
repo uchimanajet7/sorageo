@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>geolocation test saite</title>
+  <meta name="description" content="This page is geolocation test saite">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.16/css/bulma.min.css">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+  <br>
+  <!-- Geolocation -->
+  <section id="geolocation">
+    <div class="message">
+      <div class="message-header">
+        <nav class="navbar">
+          <!-- left side -->
+          <div class="navbar-left">
+            <div class="navbar-item">
+              <h3 class="subtitle is-3">
+                <span class="icon is-medium">
+                  <i class="fa fa-globe"></i>
+                </span>
+                Geolocation
+              </h3>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="message-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Value</th>
+              <th>Unit</th>
+            </tr>
+          </thead>
+          <tbody id="geo-val">
+            <tr>
+              <td class="table-link table-icon">
+                <a href="#">
+                  <span class="icon">
+                    <i class="fa fa-clock-o"></i>
+                  </span>
+                </a>
+              </td>
+              <td>Timestamp</td>
+              <td>{{vv_timestamp}}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="table-link table-icon">
+                <a href="#">
+                  <span class="icon">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                </a>
+              </td>
+              <td>Latitude</td>
+              <td>{{vv_latitude}}</td>
+              <td>deg</td>
+            </tr>
+            <tr>
+              <td class="table-link table-icon">
+                <a href="#">
+                  <span class="icon">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                </a>
+              </td>
+              <td>Longitude</td>
+              <td>{{vv_longitude}}</td>
+              <td>deg</td>
+            </tr>
+            <tr>
+              <td class="table-link table-icon">
+                <a href="#">
+                  <span class="icon">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                </a>
+              </td>
+              <td>Altitude</td>
+              <td>{{vv_altitude}}</td>
+              <td>m</td>
+            </tr>
+            <tr>
+              <td class="table-link table-icon">
+                <a href="#">
+                  <span class="icon">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                </a>
+              </td>
+              <td>Accuracy</td>
+              <td>{{vv_accuracy}}</td>
+              <td>m</td>
+            </tr>
+            <tr>
+              <td class="table-link table-icon">
+                <a href="#">
+                  <span class="icon">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                </a>
+              </td>
+              <td>Altitude Accuracy</td>
+              <td>{{vv_altitude_accuracy}}</td>
+              <td>m</td>
+            </tr>
+            <tr>
+              <td class="table-link table-icon">
+                <a href="#">
+                  <span class="icon">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                </a>
+              </td>
+              <td>Heading</td>
+              <td>{{vv_heading}}</td>
+              <td>deg</td>
+            </tr>
+            <tr>
+              <td class="table-link table-icon">
+                <a href="#">
+                  <span class="icon">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                </a>
+              </td>
+              <td>Speed</td>
+              <td>{{vv_speed}}</td>
+              <td>km/h</td>
+            </tr>
+            <tr>
+              <td class="table-link table-icon">
+                <a href="#">
+                  <span class="icon">
+                    <i class="fa fa-cloud-upload"></i>
+                  </span>
+                </a>
+              </td>
+              <td>Upload State</td>
+              <td>{{vv_uplod}}</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section id="footer">
+    <footer class="footer">
+      <div class="container">
+        <div class="content">
+          <p>
+            <i class="fa fa-info-circle"></i> It is a page that the individual made for verification. Please give me any problems at your own risk.
+          </p>
+          <p>
+            <i class="fa fa-exclamation-circle"></i> Data can be transmitted using this page only if you are setting up <strong>"soracom air"</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </section>
+ 
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.0.3/vue-resource.min.js"></script>
+  <script src="sorageo.js"></script>
+
+</html>
