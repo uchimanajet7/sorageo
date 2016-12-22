@@ -4,7 +4,7 @@
 ## Overview
 - This is "SORACOM Advent Calendar 2016" day 22 sample source.
 - Please check the blog for details !
-	- http://uchimanajet7.hatenablog.com/entry/2016/07/20/200345
+	- http://uchimanajet7.hatenablog.com/entry/2016/12/22/103134
 - Also see other advent calendar articles.
 	- http://qiita.com/advent-calendar/2016/soracom
 
